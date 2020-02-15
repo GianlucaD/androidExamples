@@ -1,1 +1,31 @@
-<mxfile host="www.draw.io" modified="2020-02-15T11:54:38.130Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" version="12.7.0" etag="T_WhuDgHupGnMHs1J5JC" type="github"><diagram id="krJJPNHBayb5JXxfMmXp">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-15T11:55:01.958Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15" etag="1Zd5A7la1jIgMgbvChZ6" version="12.7.0" type="github">
+  <diagram id="krJJPNHBayb5JXxfMmXp" name="Fragments">
+    <mxGraphModel dx="1472" dy="1074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px&quot;&gt;Fragment B&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="480" width="200" height="330" as="geometry"/>
+        </mxCell>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px&quot;&gt;Fragment A&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="140" y="480" width="200" height="330" as="geometry"/>
+        </mxCell>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-3" value="e" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.tablet;" vertex="1" parent="1">
+          <mxGeometry x="140" y="50" width="528.57" height="370" as="geometry"/>
+        </mxCell>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px&quot;&gt;Fragment A&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="180" y="90" width="140" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-5" value="&lt;font style=&quot;font-size: 22px&quot;&gt;&lt;b&gt;Fragment B&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="90" width="310" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="450" width="200" height="390" as="geometry"/>
+        </mxCell>
+        <mxCell id="iL0qqJJCGcblnAQgzIXO-7" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="450" width="200" height="390" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
