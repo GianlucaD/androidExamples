@@ -6,6 +6,8 @@ Here are all my Android Studio Examples.
 
 **ActivityParameterExample:** Jump to another Activity and pass some data
 
+**FragmentDemo:** Simple example of using Fragments
+
 **HelloWorld:** you know it..
 
 **LifeCycleDemo:** Logs the Lifecycle callbacks
