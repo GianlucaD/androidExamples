@@ -8,10 +8,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MyAdapter.OnListItemClickListener {
 
 
     private ArrayList mDataset = new ArrayList<String>();
@@ -41,10 +42,14 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        MyAdapter mAdapter = new MyAdapter(mDataset);
+        MyAdapter mAdapter = new MyAdapter(mDataset, this);
         recyclerView.setAdapter(mAdapter);
     }
 
 
-
+    @Override
+    public void onItemClick(int position) {
+        Toast toast = Toast.makeText(this.getApplicationContext(), "clicked on " + mDataset.get(position ), Toast.LENGTH_SHORT );
+        toast.show();
+    }
 }
