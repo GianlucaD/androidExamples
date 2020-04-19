@@ -19,18 +19,18 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnListI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mDataset.add("Gianluca1");
-        mDataset.add("Gianluca2");
-        mDataset.add("Gianluca3");
-        mDataset.add("Gianluca4");
-        mDataset.add("Gianluca5");
-        mDataset.add("Gianluca6");
-        mDataset.add("Gianluca7");
-        mDataset.add("Gianluca8");
-        mDataset.add("Gianluca9");
-        mDataset.add("Gianluca10");
-        mDataset.add("Gianluca11");
-        mDataset.add("Gianluca12");
+        mDataset.add("Gianluca 1");
+        mDataset.add("Gianluca 2");
+        mDataset.add("Gianluca 3");
+        mDataset.add("Gianluca 4");
+        mDataset.add("Gianluca 5");
+        mDataset.add("Gianluca 6");
+        mDataset.add("Gianluca 7");
+        mDataset.add("Gianluca 8");
+        mDataset.add("Gianluca 9");
+        mDataset.add("Gianluca 10");
+        mDataset.add("Gianluca 11");
+        mDataset.add("Gianluca 12");
         setContentView(R.layout.activity_main);
         RecyclerView recyclerView = findViewById(R.id.itemsView);
         // use this setting to improve performance if you know that changes
