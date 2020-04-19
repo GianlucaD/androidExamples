@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities" >
+
+        <item>"Zürich"</item>
+        <item>"Bern"</item>
+        <item>"Basel" </item>
+        <item>"Genf"</item>
+        <item>"Lugano"</item>
+        <item>"St. Gallen"</item>
+        <item>"Luzern"</item>
+        <item>"Chur"</item>
+
+    </string-array>
+</resources>
