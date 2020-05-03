@@ -3,20 +3,19 @@ package ch.noseryoung.listviewdemo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
-    private ArrayList<String> mDataset;
+    private HashMap<Integer, String> mDataset;
     OnListItemClickListener onItemClickListener;
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(ArrayList<String> myDataset, OnListItemClickListener onItemClickListener) {
+    public MyAdapter(HashMap<Integer, String> myDataset, OnListItemClickListener onItemClickListener) {
         mDataset = myDataset;
         this.onItemClickListener = onItemClickListener;
     }
