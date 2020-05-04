@@ -1,2 +1,2 @@
-rootProject.name='LIfeCycleDemo'
+rootProject.name='LifeCycleDemo'
 include ':app'

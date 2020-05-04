@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private HashMap<Integer, String> mDataset;
-    OnListItemClickListener onItemClickListener;
+    private OnListItemClickListener onItemClickListener;
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
@@ -23,14 +23,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     // Create new views (invoked by the layout manager)
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                           int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         // create a new view
         View v = (View) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item, parent, false);
-        MyViewHolder vh = new MyViewHolder(v, this.onItemClickListener);
-        return vh;
+        return new MyViewHolder(v, this.onItemClickListener);
     }
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -56,9 +54,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
 
         // each data item is just a string in this case
-        public TextView textView;
+        TextView textView;
 
-        public MyViewHolder(View v, OnListItemClickListener onItemclickListener) {
+        MyViewHolder(View v, OnListItemClickListener onItemclickListener) {
             super(v);
             textView = v.findViewById(R.id.textView);
             this.onItemClickListener = onItemclickListener;
@@ -68,10 +66,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         @Override
         public void onClick(View view) {
             onItemClickListener.onItemClick(getAdapterPosition());
-        }    }
+        }
+    }
 
     public interface OnListItemClickListener {
-
         void onItemClick(int position);
     }
 }
