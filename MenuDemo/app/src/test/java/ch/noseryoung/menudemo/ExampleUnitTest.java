@@ -1,4 +1,4 @@
-package com.example.zappycode.menudemo;
+package ch.noseryoung.menudemo;
 
 import org.junit.Test;
 

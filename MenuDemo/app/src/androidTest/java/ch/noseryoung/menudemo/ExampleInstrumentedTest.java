@@ -1,4 +1,4 @@
-package com.example.zappycode.menudemo;
+package ch.noseryoung.menudemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.zappycode.menudemo", appContext.getPackageName());
+        assertEquals("ch.noseryoung.menudemo", appContext.getPackageName());
     }
 }

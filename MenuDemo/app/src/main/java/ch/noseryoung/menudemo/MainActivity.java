@@ -1,4 +1,4 @@
-package com.example.zappycode.menudemo;
+package ch.noseryoung.menudemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
