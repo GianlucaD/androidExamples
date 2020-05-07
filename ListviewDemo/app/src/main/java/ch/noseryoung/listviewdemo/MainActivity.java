@@ -1,22 +1,19 @@
 package ch.noseryoung.listviewdemo;
 
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity implements MyAdapter.OnListItemClickListener {
 
 
-    private HashMap<Integer, String> mDataset = new HashMap<Integer, String>();
+    private HashMap<Integer, String> mDataset = new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnListI
 
     @Override
     public void onItemClick(int position) {
-        Toast toast = Toast.makeText(this.getApplicationContext(), "clicked on " + mDataset.get(position ), Toast.LENGTH_SHORT );
+        Toast toast = Toast.makeText(this.getApplicationContext(), "clicked on " + mDataset.get(position), Toast.LENGTH_SHORT);
         toast.show();
     }
 }
