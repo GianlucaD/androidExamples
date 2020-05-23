@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FileWriteDemo</string>
+    <string name="saveButton">Save</string>
+</resources>
