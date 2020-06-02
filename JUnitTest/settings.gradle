@@ -1,0 +1,2 @@
+rootProject.name='JUnitTest'
+include ':app'
