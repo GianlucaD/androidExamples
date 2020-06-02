@@ -1,4 +1,4 @@
-package com.noseryoung.WriteFile;
+package com.noseryoung.writefile;
 
 import org.junit.Test;
 

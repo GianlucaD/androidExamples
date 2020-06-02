@@ -1,4 +1,4 @@
-package com.noseryoung.WriteFile;
+package com.noseryoung.writefile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,11 +11,9 @@ import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder text = readFile(context);
         TextView tv = (TextView)findViewById(R.id.contentTextView);
         tv.setText(text.toString());
+        Toast.makeText(context, "File will be deleted onStop()! comment out if you don't want that", Toast.LENGTH_LONG).show();
     }
 
     private File getFile(Context context) {
@@ -59,7 +58,10 @@ public class MainActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         String data = contentView.getText().toString();
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput(FILENAME, Context.MODE_PRIVATE));
+            OutputStreamWriter outputStreamWriter;
+            File file = getFile(context);
+            Log.d(TAG, "saveFile: " + file.getAbsolutePath());
+            outputStreamWriter = new OutputStreamWriter(new FileOutputStream(file));
             outputStreamWriter.write(data);
             outputStreamWriter.close();
             Toast.makeText(context, "File successfully saved", Toast.LENGTH_LONG).show();
