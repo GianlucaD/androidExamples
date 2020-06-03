@@ -1,4 +1,4 @@
-package com.noseryoung.WriteFile;
+package ch.noseryoung.cardlayoutdemo;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.noseryoung.WriteFile", appContext.getPackageName());
+        assertEquals("ch.noseryoung.cardlayoutdemo", appContext.getPackageName());
     }
 }

@@ -2,6 +2,7 @@ package ch.nyp.databaseexample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import ch.nyp.databaseexample.persistence.UserDao;
 public class MainActivity extends AppCompatActivity {
 
 	private UserDao mUserDao;
+	private static String TAG = "MainActivity";
 
 	private View.OnClickListener mSaveUsersOnClickListener = new View.OnClickListener() {
 		@Override
@@ -28,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
 				user.setLastName("Daffré" + i);
 				usersToSave.add(user);
 			}
-
+			// delete all users since we dont want thousands of them...
 			mUserDao.deleteAll();
+			Log.d(TAG, "UserCount: " + mUserDao.countUsers());
 			mUserDao.insertAll(usersToSave);
 		}
 	};
@@ -43,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 				textToDisplay += "ID: " + user.getId() + "; Vorname: " + user.getFirstName()
 						+ "; Nachname: " + user.getLastName() + "\n";
 			}
-			Toast.makeText(MainActivity.this, textToDisplay, Toast.LENGTH_SHORT).show();
+			Toast.makeText(MainActivity.this, textToDisplay, Toast.LENGTH_LONG).show();
 
 		}
 	};

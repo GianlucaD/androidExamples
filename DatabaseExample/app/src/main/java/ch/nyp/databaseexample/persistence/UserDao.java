@@ -18,4 +18,7 @@ public interface UserDao {
 
 	@Insert
 	void insertAll(List<User> users);
+
+	@Query("Select count(*) from user")
+    int countUsers();
 }
