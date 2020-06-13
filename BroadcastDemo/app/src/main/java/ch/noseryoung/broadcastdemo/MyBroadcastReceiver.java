@@ -13,13 +13,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.d(TAG, "onReceive: " + intent.getAction());
-        if (intent.ACTION_BOOT_COMPLETED == intent.getAction()){
-            Toast toast = Toast.makeText(context, "Boot did complete", Toast.LENGTH_LONG);
-            toast.show();
-        }
         if (intent.ACTION_AIRPLANE_MODE_CHANGED == intent.getAction()){
-            Toast toast = Toast.makeText(context, "Airplane mode changed", Toast.LENGTH_LONG);
-            toast.show();
+            Log.d(TAG, "Handled Airplane Mode Change ");
         }
     }
 }
